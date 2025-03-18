@@ -62,3 +62,9 @@ a {
   text-decoration: underline;
   color: black;
 }
+
+button {
+  font-size: 20px;
+  border-radius: 15px;
+  background: var(--pink);
+}

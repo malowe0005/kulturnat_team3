@@ -1,5 +1,6 @@
 ---
 import Card from "../components/Card.astro";
+import Filter from "../components/Filter.astro";
 ---
 
 <!doctype html>
@@ -11,9 +12,18 @@ import Card from "../components/Card.astro";
 <body>
 
     <main>
-        <div>
+        <div class="div_filter">
+            <Filter FilterText="Text" />
+        </div>
+
+        <div class="div_card">
         
-            <Card />
+            <Card Event="" Place="" Desc="" Link="" />
+
+            <Card Event="" Place="Place" Desc="Desc" Link="www.google.com">
+
+            </Card>
+        
         </div>
 
     </main>
