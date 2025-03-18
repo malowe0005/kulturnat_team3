@@ -1,11 +1,62 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Card from "../components/Card.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html>
+    <head>
+        <title>Kulturnat</title>
+        <link rel="stylesheet" href="../../public/style.css">
+    </head>
+<body>
+
+    <main>
+    
+        <section class="hero_section">
+            <div>
+                <h1>Helsingør</h1>
+                <h7>Kulturnat </h7>
+            </div>
+
+            <div class="background_number"> 
+                <h8>2</h8>
+                <h8>5</h8>
+            </div>
+
+            <div class="timer"></div>
+
+            <div class="read_more">
+                <p>Læs Mere</p>
+                <img src="../../public/placeholder.webp" alt="">
+            </div>
+
+            <section class="about">
+                <div class="about_header">
+                <h3>Hvad er</h3>
+                <h9>Helsingør Kulturnat?</h9>
+                </div>
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis dolorem, quam ducimus cumque impedit laudantium veniam quasi iusto ad.</p>
+                </div>
+                <button type="button"> Læs mere om Kulturnatten 2024</button>
+
+            </section>
+
+        </section>
+
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
+
+<style>
+    .about{
+        border-radius: 150px;
+        border-width: 15px;
+    }
+</style>
