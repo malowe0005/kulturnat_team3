@@ -1,5 +1,6 @@
 ---
 import Card from "../components/Card.astro";
+import Filter from "../components/Filter.astro";
 ---
 
 <!doctype html>
@@ -11,9 +12,39 @@ import Card from "../components/Card.astro";
 <body>
 
     <main>
-        <div>
+
+        <div class="return">
+            <img src="../../public/placeholder.webp" alt="pil">
+            <p>Gå til forsiden</p>
+        </div>
+
+        <div class="filter_city">
+            <Filter FilterText="Helsingør" />
+            <Filter FilterText="Esbergærde" />
+            <Filter FilterText="Tikøb" />
+        </div>
+
+        <section>
+        <div class="program_text">
+        <h5>Program</h5>
+        </div>
         
-            <Card />
+        <p>Denne liste vil løbende blive opdateret ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        </section>
+
+        <div class="filter_events">
+            <Filter FilterText="Events" />
+            <Filter FilterText="Søg" />
+
+        </div>
+
+        <div class="div_card">
+        
+            <Card Event="" Place="" Desc="" Link="" />
+
+            <Card Event="" Place="Place" Desc="Desc" Link="www.google.com">
+        
         </div>
 
     </main>

@@ -15,8 +15,13 @@
   --grey: #8b8b8b;
 }
 
+main {
+  background-color: var(--background);
+}
+
 h1 {
   font-size: 32px;
+  font-family: Audiowide;
 }
 
 h2 {
@@ -41,8 +46,34 @@ h6 {
   font-size: 20px;
 }
 
+h7 {
+  font-size: 48px;
+  font-family: Audiowide;
+}
+
+h8 {
+  font-size: 400px;
+  color: #000;
+
+  /* Drop Shadow */
+  text-shadow: 0px 4px 40px var(--shadow);
+  font-family: Inter;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h9 {
+  font-size: 32px;
+}
+
 p {
   font-size: 16px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .card_title {
@@ -61,4 +92,10 @@ a {
   font-size: 11.5px;
   text-decoration: underline;
   color: black;
+}
+
+button {
+  font-size: 20px;
+  border-radius: 15px;
+  background: var(--pink);
 }

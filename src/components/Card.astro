@@ -1,13 +1,22 @@
 ---
-const {Place, Desc, Link } = Astro.props;
+const {Event, Place, Desc, Link,  } = Astro.props;
 ---
 
 <article>
 
+    <div>
+        <h6>{Event}</h6>
+    </div>
+
+    <div class="card">
     <img src="../../public/placeholder.webp" alt="">
     <h6>{Place}</h6>
     <p>{Desc}</p>
     <a href={Link}>Læs mere</a>
-
+    </div>
 
 </article>
+
+<style>
+
+</style>
